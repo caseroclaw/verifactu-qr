@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "verifactu-qr"
+version = "0.1.0"
+description = "URL del código QR tributario de VeriFactu (AEAT) y validación de NIF/CIF/NIE, sin dependencias. CLI + servidor MCP."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Plataforma IA (https://plataformaia.com)" }]
+keywords = ["verifactu", "aeat", "facturacion", "facturacion-electronica", "qr", "nif", "cif", "nie", "espana", "pymes", "mcp"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Spanish",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = []
+
+[project.optional-dependencies]
+svg = ["segno>=1.6"]
+
+[project.urls]
+Homepage = "https://plataformaia.com"
+"Guia VeriFactu para pymes" = "https://plataformaia.com/es/blog/verifactu-2027-pymes-fechas-preparacion"
+Repository = "https://github.com/caseroclaw/verifactu-qr"
+Issues = "https://github.com/caseroclaw/verifactu-qr/issues"
+
+[project.scripts]
+verifactu-qr = "verifactu_qr.cli:main"
+verifactu-qr-mcp = "verifactu_qr.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/verifactu_qr"]
