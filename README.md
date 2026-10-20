@@ -2,6 +2,8 @@
 
 **URL del código QR tributario de VeriFactu (AEAT) y validación de NIF/CIF/NIE — sin dependencias, en una sola línea.**
 
+[![listed on awesome-spain](https://img.shields.io/badge/listed%20on-awesome--spain-c60b1e?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDIwIDE0Ij48cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMTQiIGZpbGw9IiNjNjBiMWUiLz48cmVjdCB5PSIzLjUiIHdpZHRoPSIyMCIgaGVpZ2h0PSI3IiBmaWxsPSIjZmZjNDAwIi8+PC9zdmc+&labelColor=ffc400)](https://github.com/GeiserX/awesome-spain#readme)
+
 Herramienta en Python para generar la URL que debe llevar el QR obligatorio de las facturas
 españolas (RD 1007/2023 · Orden HAC/1177/2024) validando antes NIF, número de serie, fecha e
 importe, con los **códigos de error oficiales** de la AEAT (2001-2006). Incluye CLI y servidor
