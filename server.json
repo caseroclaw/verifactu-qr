@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.caseroclaw/verifactu-qr",
+  "title": "VeriFactu QR",
+  "description": "URL del QR tributario de VeriFactu (AEAT) y validación de NIF/CIF/NIE. CLI + MCP.",
+  "repository": {
+    "url": "https://github.com/caseroclaw/verifactu-qr",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "websiteUrl": "https://plataformaia.com",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "verifactu-qr",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "packageArguments": [
+        {
+          "type": "named",
+          "name": "--from",
+          "value": "verifactu-qr"
+        },
+        {
+          "type": "positional",
+          "value": "verifactu-qr-mcp"
+        }
+      ],
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
